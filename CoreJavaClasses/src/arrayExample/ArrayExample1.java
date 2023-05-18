@@ -1,5 +1,7 @@
 package arrayExample;
 
+import java.util.Scanner;
+
 public class ArrayExample1 {
 
 	public static void main(String[] args) {
@@ -95,10 +97,122 @@ public class ArrayExample1 {
 //			System.out.print(ar[i]+" ");
 //		}
 		
+//		int temp;
+//		int ar[] = {39,4,8,57};
+//		for(int i=0; i<=ar.length-1; i++) {
+//			for(int j=i+1; j<=ar.length-1; j++) {
+//				if(ar[i]<ar[j]) {
+//					temp = ar[i];
+//					ar[i] = ar[j];
+//					ar[j] = temp;
+//				}
+//			}
+//			System.out.print(ar[i]+" ");
+//		}
+		
+	//greatest number from array....
+		
+//		int ar[] = {149,3,82,172,83};
+		
+//		int max=0;
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			if(ar[i]>max) {//149>0, 3>49, 82>49, 72>82, 83>82
+//				max = ar[i]; //max=49->82->83
+//			}
+//		}
+//		System.out.println(max);
+		
+		//smallest number from array....
+//		int ar[] = {149,3,82,172,83};
+//		
+//		int min = ar[0];//149
+//		
+//		for(int i=0;i<=ar.length-1; i++) {
+//			if(ar[i]<min) {//149<149, 3<149, 82<3, 3>172, 3>83
+//				min=ar[i];//min=3
+//			}
+//		}System.out.println(min);
+		
+		//max and min from an array....
+//		int ar[] = {12,9,3,8,4,7,15};
+//		int max=0;
+//		int min=ar[0];
+//		for(int i=0; i<=ar.length-1; i++) {
+//			if(ar[i]>max) {
+//				max=ar[i];
+//			}else if(ar[i]<min){
+//				min=ar[i];
+//			}
+//		}System.out.println("max = "+ max);
+//		System.out.println("min = "+ min);
+
+	//second maximum number from non-repeating array...
+//		int ar[] = {12,9,3,8,4,7,15};
+//		int max = 0;
+//		int secMax = 0;
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			if(ar[i]>max) {//12>0, 9>12, 3>12, 8>12, 4>12,7>12, 15>12
+//				secMax=max;//secMax=0, secMax=12
+//				max=ar[i];//max=12, max=15
+//			}else if(ar[i]>secMax) {//9>0, 3>9, 8>9, 4>9, 7>9
+//				secMax=ar[i];//secMax=9
+//			}
+//		}
+//		System.out.println("max = "+max);
+//		System.out.println("secMax = "+secMax);
 		
 		
+		//find second max from repeating array...
+//		int ar[] = {12,9,3,15,8,4,7,15};
+//		int temp;
+//		int secMax=0;
+//		for(int i=0; i<=ar.length-1; i++) {
+//			for(int j=i+1; j<=ar.length-1; j++) {
+//				if(ar[i]>ar[j]) {
+//					temp=ar[i];
+//					ar[i]=ar[j];
+//					ar[j]=temp;
+//				}
+//				if(ar[i]!=ar[j]) {
+//					secMax = ar[i];
+//				}
+//			}
+//			System.out.print(ar[i]+" ");
+//		}
+//		System.out.println("second max = "+secMax);
+		
+//		int ar[] = {12,9,3,15,8,4,7,15};
+//		int max=0,secMax=0;
+//		for(int i=0; i<=ar.length-1; i++) {
+//			if(ar[i]>max) {
+//				secMax=max;
+//				max=ar[i];
+//			}else if(ar[i]>secMax && ar[i]<max) {
+//				secMax = ar[i];
+//			}
+//			}
+//		System.out.println(secMax);
 		
 		
+		//user input...
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int ar[] = new int[5];
+		System.out.println("please enter value for integer array...");
+		for(int i=0; i<=ar.length-1; i++) {
+			ar[i]=sc.nextInt();
+		}
+		System.out.println("given array is....");
+		for(int i=0; i<=ar.length-1; i++) {
+			System.out.print(ar[i]+" ");
+		}
+
+		
+		
+		}
 	}
 
-}
+
