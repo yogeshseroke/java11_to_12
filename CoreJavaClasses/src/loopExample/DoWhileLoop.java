@@ -1,6 +1,9 @@
 package loopExample;
 import java.util.Scanner;
-public class DoWhileLoop {
+
+import oopsConceptExample.AbstractionExample;
+
+public class DoWhileLoop extends AbstractionExample{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -79,17 +82,33 @@ public class DoWhileLoop {
 //			System.out.println(fact);
 //			i++;
 //		}while(i<=5);
-		int i=0;
-		do {
-			int j=0;
-			do {
-				System.out.print("* ");
-				j++;
-			}while(j<=i);
-			System.out.println();
-			i++;
-		}while(i<5);
+//		int i=0;
+//		do {
+//			int j=0;
+//			do {
+//				System.out.print("* ");
+//				j++;
+//			}while(j<=i);
+//			System.out.println();
+//			i++;
+//		}while(i<5);
 		
+		
+		
+		//=====================
+		
+		AbstractionExample obj = new AbstractionExample();
+		
+		//System.out.println(obj.a=10);//public
+		//System.out.println(obj.b);//it is a private
+		//obj.display();//private variable access using public method
+		//obj.c;
+//		DoWhileLoop obj1 = new DoWhileLoop();//for protected 
+//		System.out.println(obj1.c=20);//protected variable access
+		
+		//default access try...
+		
+//		obj1.d=10;
 	}
 
 }
